@@ -23,7 +23,7 @@ export default class App
 
   createCanvas()
   {
-    this.Exp = new Exp(
+    this.exp = new Exp(
       this.template,
       this.canvas
     )

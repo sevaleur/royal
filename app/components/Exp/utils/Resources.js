@@ -53,7 +53,7 @@ export default class Resources extends EventEmitter
 
   sourceLoaded(source, file)
   {
-    this.item[source.name] = file
+    this.items[source.name] = file
 
     this.loaded++
 

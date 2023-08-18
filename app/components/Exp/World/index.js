@@ -7,9 +7,9 @@ export default class World
   {
     this.exp = new Exp()
     this.scene = this.exp.scene
-    this.models = this.exp.resources.items
+    this.model = this.exp.resources.items.royal.scene
 
-    this.light = new THREE.AmbientLight(0xFFFFFF, 0.5)
-    this.scene.add(this.models.royal, this.light)
+    this.light = new THREE.DirectionalLight(0xFFFFFF, 10)
+    this.scene.add(this.model, this.light)
   }
 }

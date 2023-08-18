@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 
 import Sizes from './utils/Sizes.js'
+import Time from './utils/Time.js'
 import Resources from './utils/Resources.js'
 
 import _sources from './data/sources.js'
@@ -23,11 +24,21 @@ export default class Exp
 
     this.canvas = _canvas
     this.sizes = new Sizes()
+    this.time = new Time()
     this.resources = new Resources(_sources)
     this.scene = new THREE.Scene()
     this.camera = new Camera()
     this.renderer = new Renderer()
 
+    this.handleEvents()
+  }
+
+  /*
+    EVENTS.
+  */
+
+  handleEvents()
+  {
     this.resources.on('loaded', () =>
     {
       this.world = new World()
@@ -36,6 +47,11 @@ export default class Exp
     this.sizes.on('resize', () =>
     {
       this.resize()
+    })
+
+    this.time.on('update', () =>
+    {
+      this.update()
     })
   }
 
@@ -47,6 +63,7 @@ export default class Exp
 
   update()
   {
+    this.camera.update()
     this.renderer.update()
   }
 }
