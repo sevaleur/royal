@@ -1,0 +1,26 @@
+@font-face {
+  font-family: $font-open-sans;
+  src: url('../fonts/OpenSans.woff2') format('woff2'),
+      url('../fonts/OpenSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-avant-garde;
+  src: url('../fonts/ITC-Avant-Garde-Gothic.woff2') format('woff2'),
+      url('../fonts/ITC-Avant-Garde-Gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-quadrat;
+  src: url('../fonts/Quadrat-Serial-Medium.woff2') format('woff2'),
+      url('../fonts/Quadrat-Serial-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
