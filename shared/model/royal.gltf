@@ -1,0 +1,439 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v3.5.1",
+    "version": "2.0",
+    "extras": {
+      "author": "luminou_CS (https://sketchfab.com/luminou)",
+      "license": "SKETCHFAB Editorial (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/royal-arena-copenhague-danemark-60bedc0753d641b99d6259562a79cdc7",
+      "title": "Royal Arena - Copenhague, Danemark"
+    }
+  },
+  "accessors": [
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1.3029588460922241,
+        -0.000011791475117206573
+      ],
+      "min": [
+        -1,
+        -1.3029588460922241,
+        -0.013574195094406605
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 12051,
+      "max": [
+        5.6663031578063965,
+        9.549056053161621,
+        3.019521713256836
+      ],
+      "min": [
+        -5.641052722930908,
+        -5.862734794616699,
+        2.006530523300171
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 12051,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 12051,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 28934,
+      "max": [
+        7.015572547912598,
+        11.942608833312988,
+        3.832411766052246
+      ],
+      "min": [
+        -6.9743218421936035,
+        -11.299778938293457,
+        -0.10017657279968262
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 28934,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 28934,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 36,
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 33867,
+      "bufferView": 3,
+      "byteOffset": 144
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 56703,
+      "bufferView": 3,
+      "byteOffset": 135612
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 576,
+      "byteStride": 24,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 385632,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 386208,
+      "byteLength": 925888,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1312096,
+      "byteLength": 362424,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "uri": "textures/Matriau.001_diffuse.png"
+    },
+    {
+      "mimeType": "image/png",
+      "uri": "specular_1.png"
+    },
+    {
+      "mimeType": "image/png",
+      "uri": "metallicRoughness_1.png"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "scene.bin",
+      "byteLength": 1674520
+    }
+  ],
+  "materials": [
+    {
+      "name": "Plan.001__0",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "roughnessFactor": 0.11324324817629272,
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_ior": {
+          "ior": 1000
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            0.4365337697657015,
+            0.4365337697657015,
+            0.4365337697657015
+          ]
+        }
+      }
+    },
+    {
+      "name": "Matriau.003",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1
+        ],
+        "roughnessFactor": 0.8239417257461427,
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_ior": {
+          "ior": 1000
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            0.05,
+            0.05,
+            0.05
+          ]
+        }
+      }
+    },
+    {
+      "name": "Matriau.001",
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.0838097792,
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "extensions": {
+        "KHR_materials_ior": {
+          "ior": 1000
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            0.5409540296,
+            0.5409540296,
+            0.5409540296
+          ],
+          "specularTexture": {
+            "index": 2
+          },
+          "specularColorTexture": {
+            "index": 2
+          }
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plan.001__0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 8
+        }
+      ]
+    },
+    {
+      "name": "0 - Logo TRI_Mat��riau.003_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 3,
+            "POSITION": 2,
+            "TEXCOORD_0": 4
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 9
+        }
+      ]
+    },
+    {
+      "name": "0 - RA B_Mat��riau.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "mode": 4,
+          "material": 2,
+          "indices": 10
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Sketchfab_model",
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "abb9590a33ce4393b748b0b899a58e2c.fbx",
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582
+      ],
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "RootNode",
+      "children": [
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Plan.001",
+      "rotation": [
+        -0.7071068387877038,
+        0,
+        0,
+        0.7071067235853866
+      ],
+      "scale": [
+        736.6919555664062,
+        917.2409057617188,
+        736.6919555664062
+      ],
+      "children": [
+        4
+      ]
+    },
+    {
+      "name": "Plan.001__0",
+      "mesh": 0
+    },
+    {
+      "name": "0 - Logo TRI",
+      "rotation": [
+        -0.7071068387877038,
+        0,
+        0,
+        0.7071067235853866
+      ],
+      "scale": [
+        100,
+        100.00000000000001,
+        100.00000000000001
+      ],
+      "children": [
+        6
+      ]
+    },
+    {
+      "name": "0 - Logo TRI_Mat��riau.003_0",
+      "mesh": 1
+    },
+    {
+      "name": "0 - RA B",
+      "rotation": [
+        -0.7071068387877038,
+        0,
+        0,
+        0.7071067235853866
+      ],
+      "scale": [
+        100,
+        100.00000000000001,
+        100.00000000000001
+      ],
+      "children": [
+        8
+      ]
+    },
+    {
+      "name": "0 - RA B_Mat��riau.001_0",
+      "mesh": 2
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_materials_ior",
+    "KHR_materials_specular"
+  ]
+}

@@ -45,7 +45,7 @@ export default class Env
       shadows: true,
       exposure: 0.68,
       bulbPower: Object.keys( this.bulbLuminousPowers )[ 4 ],
-      hemiIrradiance: Object.keys( this.hemiLuminousIrradiances )[ 9 ]
+      hemiIrradiance: Object.keys( this.hemiLuminousIrradiances )[ 2 ]
     }
   }
 
@@ -66,6 +66,8 @@ export default class Env
     this.scene.add( this.bulbLight )
 
     this.hemiLight = new THREE.HemisphereLight( this.params.day, this.params.ground, 0.02 )
+    console.log(this.hemiLight)
+    this.hemiLight.scale.set(100, 100, 100)
     this.scene.add( this.hemiLight )
 
     this.bulbLight.power = this.bulbLuminousPowers[ this.params.bulbPower ]
