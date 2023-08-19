@@ -1,7 +1,7 @@
 export default [
   {
     type: 'gltf',
-    name: 'royal',
-    path: './model/scene.gltf'
+    name: 'model',
+    path: './model/untitled.gltf'
   },
 ]

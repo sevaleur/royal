@@ -21,7 +21,8 @@ export default class Renderer
       antialias: true,
       alpha: true
     })
-
+    this.instance.shadowMap.enabled = true
+    this.instance.toneMapping = THREE.ACESFilmicToneMapping
     this.instance.setSize(this.sizes.width, this.sizes.height)
     this.instance.setPixelRatio(this.sizes.pixel_ratio)
   }
@@ -34,6 +35,7 @@ export default class Renderer
 
   update()
   {
+    this.instance.shadowMap.enabled = true
     this.instance.render(this.scene, this.camera.instance)
   }
 }

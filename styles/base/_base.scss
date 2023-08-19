@@ -14,8 +14,8 @@ html
   overflow: hidden;
   position: fixed;
 
-  background: $color-oxford-blue;
-  color: $color-white-smoke;
+  background: $color-white-smoke;
+  color: $color-oxford-blue;
 
   @include media('<phone')
   {

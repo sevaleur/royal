@@ -63,6 +63,9 @@ export default class Exp
 
   update()
   {
+    if(this.world && this.world.update)
+      this.world.update()
+
     this.camera.update()
     this.renderer.update()
   }
