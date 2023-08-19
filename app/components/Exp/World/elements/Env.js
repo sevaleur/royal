@@ -8,7 +8,7 @@ export default class Env
 
     this.setConfig()
     this.setLights()
-    //this.setScene()
+    this.setScene()
   }
 
   setConfig()
@@ -42,10 +42,11 @@ export default class Env
       day: 0x2773b2,
       night: 0x00102a,
       ground: 0xf3f3f3,
+      fog: 0xd6d2ca,
       shadows: true,
       exposure: 0.68,
       bulbPower: Object.keys( this.bulbLuminousPowers )[ 4 ],
-      hemiIrradiance: Object.keys( this.hemiLuminousIrradiances )[ 2 ]
+      hemiIrradiance: Object.keys( this.hemiLuminousIrradiances )[ 9 ]
     }
   }
 
@@ -66,7 +67,6 @@ export default class Env
     this.scene.add( this.bulbLight )
 
     this.hemiLight = new THREE.HemisphereLight( this.params.day, this.params.ground, 0.02 )
-    console.log(this.hemiLight)
     this.hemiLight.scale.set(100, 100, 100)
     this.scene.add( this.hemiLight )
 
@@ -74,11 +74,15 @@ export default class Env
     this.bulbMat.emissiveIntensity = this.bulbLight.intensity / Math.pow( 0.02, 2.0 )
 
     this.hemiLight.intensity = this.hemiLuminousIrradiances[ this.params.hemiIrradiance ]
+
+    this.directLight = new THREE.DirectionalLight(0xffffff, 5)
+    this.directLight.position.set(3, 5, 20)
+    this.scene.add(this.directLight)
   }
 
   setScene()
   {
-    this.scene.add(this.light)
+    this.scene.fog = new THREE.Fog(this.params.fog, 5, 50)
   }
 
   resize()

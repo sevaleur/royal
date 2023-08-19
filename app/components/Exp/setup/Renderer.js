@@ -21,8 +21,13 @@ export default class Renderer
       antialias: true,
       alpha: true
     })
+
     this.instance.shadowMap.enabled = true
+    this.instance.shadowMap.type = THREE.PCFSoftShadowMap
+    
     this.instance.toneMapping = THREE.ACESFilmicToneMapping
+    this.instance.toneMappingExposure = Math.pow(0.68, 5.0)
+
     this.instance.setSize(this.sizes.width, this.sizes.height)
     this.instance.setPixelRatio(this.sizes.pixel_ratio)
   }
