@@ -1,0 +1,25 @@
+.preloader
+{
+  @extend %cover;
+  @extend %center;
+
+  z-index: z('content');
+
+  background: $color-background-grey;
+  color: $color-oxford-blue;
+
+  display: flex;
+  flex-direction: column;
+
+  display: none;
+
+  &__title
+  {
+    @extend %title-100;
+  }
+
+  &__number
+  {
+    @extend %desc-40;
+  }
+}

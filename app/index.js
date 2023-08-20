@@ -7,6 +7,7 @@ export default class App
 
     this.createContent()
     this.createCanvas()
+    this.createPreloader()
   }
 
   /*
@@ -27,6 +28,12 @@ export default class App
       this.template,
       this.canvas
     )
+  }
+
+  createPreloader()
+  {
+    if(this.exp && this.exp.loaded)
+      console.log('ready')
   }
 }
 

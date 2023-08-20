@@ -30,6 +30,8 @@ export default class Exp
     this.camera = new Camera()
     this.renderer = new Renderer()
 
+    this.loaded = false
+
     this.handleEvents()
   }
 
@@ -42,6 +44,8 @@ export default class Exp
     this.resources.on('loaded', () =>
     {
       this.world = new World()
+
+      this.loaded = true
     })
 
     this.sizes.on('resize', () =>

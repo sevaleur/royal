@@ -7,6 +7,8 @@ export default class Model
     this.scene = _scene
     this.model = _resources.model.scene
 
+    console.log(_resources.model)
+
     this.setMaterials()
     this.changeMaterials()
     this.setScene()
