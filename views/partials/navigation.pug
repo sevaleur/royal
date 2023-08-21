@@ -1,9 +1,10 @@
-.logo
-  a.logo__link(href='/')=meta.data.title
-    img.logo__image(src=meta.data.image.url)
+
 
 nav.navigation
   .navigation__wrapper
+    .navigation__logo
+      a.navigation__logo__link(href='/')=meta.data.title
+        img.navigation__logo__link__image(src=meta.data.image.url)
     ul.navigation__list
       each item in navigation.data.links
         li.navigation__list__item

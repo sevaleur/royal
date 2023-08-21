@@ -18,13 +18,21 @@ export default class Camera
 
   setInstance()
   {
-    this.instance = new THREE.PerspectiveCamera(
-      70,
-      this.sizes.width / this.sizes.height,
-      0.1,
-      100
+    this.instance = new THREE.OrthographicCamera(
+      (-(this.sizes.width / this.sizes.height) * 12) / 2,
+      ((this.sizes.width / this.sizes.height) * 12) / 2,
+      12 / 2,
+      -12 / 2,
+      -20,
+      1000
     )
-    this.instance.position.set(0, 3, 20)
+
+    this.instance.position.set(
+      0,
+      2,
+      4
+    )
+
     this.scene.add(this.instance)
   }
 
@@ -32,11 +40,17 @@ export default class Camera
   {
     this.controls = new OrbitControls(this.instance, this.canvas)
     this.controls.enableDamping = true
+    this.controls.maxPolarAngle = Math.PI / 2
+
+    this.controls.listenToKeyEvents(window)
   }
 
   resize()
   {
-    this.instance.aspect = this.sizes.width / this.sizes.height
+    this.instance.left = (-(this.sizes.width / this.sizes.height) * 12) / 2
+    this.instance.right = ((this.sizes.width / this.sizes.height) * 12) / 2
+    this.instance.top = 12 / 2
+    this.instance.bottom = - 12 / 2
     this.instance.updateProjectionMatrix()
   }
 

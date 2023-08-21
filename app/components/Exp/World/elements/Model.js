@@ -41,6 +41,12 @@ export default class Model
 
   setScene()
   {
+    this.model.rotation.y = -Math.PI * 0.25
+    this.model.scale.set(
+      0.5,
+      0.5,
+      0.5
+    )
     this.scene.add(this.model)
   }
 
