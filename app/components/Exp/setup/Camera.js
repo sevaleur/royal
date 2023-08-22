@@ -19,18 +19,18 @@ export default class Camera
   setInstance()
   {
     this.instance = new THREE.OrthographicCamera(
-      (-(this.sizes.width / this.sizes.height) * 12) / 2,
-      ((this.sizes.width / this.sizes.height) * 12) / 2,
-      12 / 2,
-      -12 / 2,
+      (-(this.sizes.width / this.sizes.height) * 14) / 2,
+      ((this.sizes.width / this.sizes.height) * 14) / 2,
+      14 / 2,
+      -14 / 2,
       -20,
       1000
     )
 
     this.instance.position.set(
       0,
-      2,
-      4
+      4,
+      12
     )
 
     this.scene.add(this.instance)
@@ -42,15 +42,18 @@ export default class Camera
     this.controls.enableDamping = true
     this.controls.maxPolarAngle = Math.PI / 2
 
+    this.controls.maxZoom = 5.0
+    this.controls.minZoom = 0.6
+
     this.controls.listenToKeyEvents(window)
   }
 
   resize()
   {
-    this.instance.left = (-(this.sizes.width / this.sizes.height) * 12) / 2
-    this.instance.right = ((this.sizes.width / this.sizes.height) * 12) / 2
-    this.instance.top = 12 / 2
-    this.instance.bottom = - 12 / 2
+    this.instance.left = (-(this.sizes.width / this.sizes.height) * 14) / 2
+    this.instance.right = ((this.sizes.width / this.sizes.height) * 14) / 2
+    this.instance.top = 14 / 2
+    this.instance.bottom = -14 / 2
     this.instance.updateProjectionMatrix()
   }
 

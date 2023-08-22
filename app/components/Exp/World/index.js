@@ -11,7 +11,7 @@ export default class World
     this.scene = this.exp.scene
     this.resources = this.exp.resources.items
     this.model = new Model(this.scene, this.resources)
-    this.env = new Env(this.scene)
+    this.env = new Env(this.scene, this.model.position)
   }
 
   resize()

@@ -2,7 +2,7 @@ export default [
   {
     type: 'gltf',
     name: 'model',
-    path: './model/untitled.gltf'
+    path: './model/duerdet.gltf'
   },
 
 ]
